@@ -34,6 +34,9 @@ RKLogDebug(@"%s: Ignoring NSURLConnection delegate message sent after cancel.", 
 return __VA_ARGS__;                                                                \
 }
 
+
+@class CDCertificateFingerPrintVerifier;
+
 @implementation RKResponse
 
 @synthesize body = _body;
@@ -112,8 +115,12 @@ return __VA_ARGS__;                                                             
 
 - (BOOL)isServerTrusted:(SecTrustRef)trust
 {
-    BOOL proceed = NO;
-
+    BOOL proceed = (nil != [CDCertificateFingerPrintVerifier
+                       createCredentialsIfServerCertificateDetailsAreValidTrust:trust]);
+    if (! proceed)
+    {
+        return NO;
+    }
     if (_request.disableCertificateValidation) {
         proceed = YES;
     } else if ([_request.additionalRootCertificates count] > 0) {
@@ -136,7 +143,7 @@ return __VA_ARGS__;                                                             
             }
         }
     }
-
+    
     return proceed;
 }
 
@@ -176,11 +183,12 @@ return __VA_ARGS__;                                                             
     if ([[space authenticationMethod] isEqualToString:NSURLAuthenticationMethodServerTrust]) {
         // server is using an SSL certificate that the OS can't validate
         // see whether the client settings allow validation here
-        if (_request.disableCertificateValidation || [_request.additionalRootCertificates count] > 0) {
-            return YES;
-        } else {
-            return NO;
-        }
+        return YES;
+//        if (_request.disableCertificateValidation || [_request.additionalRootCertificates count] > 0) {
+//            return YES;
+//        } else {
+//            return NO;
+//        }
     }
 
     // Handle non-SSL challenges
