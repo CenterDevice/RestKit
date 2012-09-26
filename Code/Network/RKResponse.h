@@ -291,6 +291,13 @@
 - (BOOL)isNotModified;
 
 /**
+ Indicates an HTTP response code of 400.
+ 
+ @return YES if the response is 400 Bad Request
+ */
+- (BOOL) isBadRequest;
+
+/**
  Indicates an HTTP response code of 401.
 
  @return YES if the response is 401 Unauthorized.
@@ -310,6 +317,14 @@
  @return YES if the response is 404 Not Found.
  */
 - (BOOL)isNotFound;
+
+
+/**
+ Indicates an HTTP response code of 406.
+ 
+ @return YES if the response is 406 Not Acceptable.
+ */
+- (BOOL) isNotAcceptable;
 
 /**
  Indicates an HTTP response code of 409.

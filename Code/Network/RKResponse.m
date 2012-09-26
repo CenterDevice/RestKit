@@ -435,6 +435,11 @@ return __VA_ARGS__;                                                             
     return ([self statusCode] == 304);
 }
 
+- (BOOL) isBadRequest
+{
+    return ([self statusCode] == 400);
+}
+
 - (BOOL)isUnauthorized
 {
     return ([self statusCode] == 401);
@@ -448,6 +453,11 @@ return __VA_ARGS__;                                                             
 - (BOOL)isNotFound
 {
     return ([self statusCode] == 404);
+}
+
+- (BOOL) isNotAcceptable
+{
+    return ([self statusCode] == 406);
 }
 
 - (BOOL)isConflict
