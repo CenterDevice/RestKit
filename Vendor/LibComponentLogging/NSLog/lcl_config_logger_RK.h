@@ -1,6 +1,6 @@
 //
 //
-// LCLNSLog.m
+// lcl_config_logger_RK.h
 //
 //
 // Copyright (c) 2008-2009 Arne Harren <ah@0xc0.de>
@@ -24,5 +24,6 @@
 // THE SOFTWARE.
 
 
-// empty
+// Use the RKLCLNSLog logger.
+#import "LCLNSLog_RK.h"
 

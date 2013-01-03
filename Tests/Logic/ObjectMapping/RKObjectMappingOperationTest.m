@@ -420,7 +420,7 @@
     [relationshipMapping mapKeyPath:@"title" toAttribute:@"testString"];
     [objectMapping mapKeyPath:@"mediaGroups.contents" toRelationship:@"hasMany" withMapping:relationshipMapping];
     RKMappableObject *targetObject = [[RKMappableObject new] autorelease];
-    RKLogToComponentWithLevelWhileExecutingBlock(lcl_cRestKitObjectMapping, RKLogLevelDebug, ^ {
+    RKLogToComponentWithLevelWhileExecutingBlock(RKlcl_cRestKitObjectMapping, RKLogLevelDebug, ^ {
         RKObjectMappingOperation *operation = [[RKObjectMappingOperation alloc] initWithSourceObject:data
                                                                                    destinationObject:targetObject mapping:objectMapping];
         NSError *error = nil;

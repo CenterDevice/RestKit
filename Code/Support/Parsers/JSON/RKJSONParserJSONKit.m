@@ -24,7 +24,7 @@
 
 // Set Logging Component
 #undef RKLogComponent
-#define RKLogComponent lcl_cRestKitSupportParsers
+#define RKLogComponent RKlcl_cRestKitSupportParsers
 
 
 // TODO: JSONKit serializer instance should be reused to enable leverage

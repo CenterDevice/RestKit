@@ -1,9 +1,9 @@
 //
 //
-// lcl_config_extensions.h
+// LCLNSLog_RK.m
 //
 //
-// Copyright (c) 2008-2011 Arne Harren <ah@0xc0.de>
+// Copyright (c) 2008-2009 Arne Harren <ah@0xc0.de>
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -23,13 +23,6 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-//
-// lcl_config_extensions.h template.
-//
 
-
-//
-// The lcl_config_extensions.h file can be used to #include, #import, or define
-// log extensions.
-//
+// empty
 

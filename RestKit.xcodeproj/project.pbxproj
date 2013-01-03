@@ -115,9 +115,9 @@
 		25160E2C145650490060A5C5 /* RKParserRegistry.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160D9F145650490060A5C5 /* RKParserRegistry.m */; };
 		25160E2D145650490060A5C5 /* RKRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160DA0145650490060A5C5 /* RKRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160E2E145650490060A5C5 /* RestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160DA1145650490060A5C5 /* RestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25160E31145650490060A5C5 /* lcl_config_components.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160DA5145650490060A5C5 /* lcl_config_components.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25160E32145650490060A5C5 /* lcl_config_extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160DA6145650490060A5C5 /* lcl_config_extensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25160E33145650490060A5C5 /* lcl_config_logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160DA7145650490060A5C5 /* lcl_config_logger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25160E31145650490060A5C5 /* lcl_config_components_RK.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160DA5145650490060A5C5 /* lcl_config_components_RK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25160E32145650490060A5C5 /* lcl_config_extensions_RK.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160DA6145650490060A5C5 /* lcl_config_extensions_RK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25160E33145650490060A5C5 /* lcl_config_logger_RK.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160DA7145650490060A5C5 /* lcl_config_logger_RK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160E34145650490060A5C5 /* NSDictionary+RKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160DA8145650490060A5C5 /* NSDictionary+RKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160E35145650490060A5C5 /* NSDictionary+RKAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160DA9145650490060A5C5 /* NSDictionary+RKAdditions.m */; };
 		25160E36145650490060A5C5 /* NSString+RKAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160DAA145650490060A5C5 /* NSString+RKAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -151,13 +151,10 @@
 		25160ED71456532C0060A5C5 /* FileMD5Hash_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 25160E971456532C0060A5C5 /* FileMD5Hash_Prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160EDD1456532C0060A5C5 /* JSONKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160E9D1456532C0060A5C5 /* JSONKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160EDF1456532C0060A5C5 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160E9E1456532C0060A5C5 /* JSONKit.m */; };
-		25160EE21456532C0060A5C5 /* lcl.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EA21456532C0060A5C5 /* lcl.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25160EE41456532C0060A5C5 /* lcl.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160EA31456532C0060A5C5 /* lcl.m */; };
-		25160EE61456532C0060A5C5 /* lcl_config_components.template.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EA41456532C0060A5C5 /* lcl_config_components.template.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25160EE81456532C0060A5C5 /* lcl_config_extensions.template.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EA51456532C0060A5C5 /* lcl_config_extensions.template.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25160EEA1456532C0060A5C5 /* lcl_config_logger.template.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EA61456532C0060A5C5 /* lcl_config_logger.template.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25160EF81456532C0060A5C5 /* LCLNSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EB01456532C0060A5C5 /* LCLNSLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25160EFA1456532C0060A5C5 /* LCLNSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160EB11456532C0060A5C5 /* LCLNSLog.m */; };
+		25160EE21456532C0060A5C5 /* lcl_RK.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EA21456532C0060A5C5 /* lcl_RK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25160EE41456532C0060A5C5 /* lcl_RK.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160EA31456532C0060A5C5 /* lcl_RK.m */; };
+		25160EF81456532C0060A5C5 /* LCLNSLog_RK.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EB01456532C0060A5C5 /* LCLNSLog_RK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25160EFA1456532C0060A5C5 /* LCLNSLog_RK.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160EB11456532C0060A5C5 /* LCLNSLog_RK.m */; };
 		25160F081456532C0060A5C5 /* SOCKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 25160EBD1456532C0060A5C5 /* SOCKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25160F0A1456532C0060A5C5 /* SOCKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 25160EBE1456532C0060A5C5 /* SOCKit.m */; };
 		25160F171456538B0060A5C5 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25160F161456538B0060A5C5 /* libxml2.dylib */; };
@@ -504,9 +501,9 @@
 		25160D9F145650490060A5C5 /* RKParserRegistry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKParserRegistry.m; sourceTree = "<group>"; };
 		25160DA0145650490060A5C5 /* RKRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKRouter.h; sourceTree = "<group>"; };
 		25160DA1145650490060A5C5 /* RestKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestKit.h; sourceTree = "<group>"; };
-		25160DA5145650490060A5C5 /* lcl_config_components.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_components.h; sourceTree = "<group>"; };
-		25160DA6145650490060A5C5 /* lcl_config_extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_extensions.h; sourceTree = "<group>"; };
-		25160DA7145650490060A5C5 /* lcl_config_logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_logger.h; sourceTree = "<group>"; };
+		25160DA5145650490060A5C5 /* lcl_config_components_RK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_components_RK.h; sourceTree = "<group>"; };
+		25160DA6145650490060A5C5 /* lcl_config_extensions_RK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_extensions_RK.h; sourceTree = "<group>"; };
+		25160DA7145650490060A5C5 /* lcl_config_logger_RK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_logger_RK.h; sourceTree = "<group>"; };
 		25160DA8145650490060A5C5 /* NSDictionary+RKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+RKAdditions.h"; sourceTree = "<group>"; };
 		25160DA9145650490060A5C5 /* NSDictionary+RKAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+RKAdditions.m"; sourceTree = "<group>"; };
 		25160DAA145650490060A5C5 /* NSString+RKAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RKAdditions.h"; sourceTree = "<group>"; };
@@ -550,15 +547,15 @@
 		25160E9D1456532C0060A5C5 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
 		25160E9E1456532C0060A5C5 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 		25160E9F1456532C0060A5C5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		25160EA21456532C0060A5C5 /* lcl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl.h; sourceTree = "<group>"; };
-		25160EA31456532C0060A5C5 /* lcl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lcl.m; sourceTree = "<group>"; };
-		25160EA41456532C0060A5C5 /* lcl_config_components.template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_components.template.h; sourceTree = "<group>"; };
-		25160EA51456532C0060A5C5 /* lcl_config_extensions.template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_extensions.template.h; sourceTree = "<group>"; };
-		25160EA61456532C0060A5C5 /* lcl_config_logger.template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_logger.template.h; sourceTree = "<group>"; };
+		25160EA21456532C0060A5C5 /* lcl_RK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_RK.h; sourceTree = "<group>"; };
+		25160EA31456532C0060A5C5 /* lcl_RK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = lcl_RK.m; sourceTree = "<group>"; };
+		25160EA41456532C0060A5C5 /* RKlcl_config_components.template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKlcl_config_components.template.h; sourceTree = "<group>"; };
+		25160EA51456532C0060A5C5 /* RKlcl_config_extensions.template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKlcl_config_extensions.template.h; sourceTree = "<group>"; };
+		25160EA61456532C0060A5C5 /* RKlcl_config_logger.template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKlcl_config_logger.template.h; sourceTree = "<group>"; };
 		25160EA71456532C0060A5C5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		25160EAF1456532C0060A5C5 /* lcl_config_logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_logger.h; sourceTree = "<group>"; };
-		25160EB01456532C0060A5C5 /* LCLNSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLNSLog.h; sourceTree = "<group>"; };
-		25160EB11456532C0060A5C5 /* LCLNSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLNSLog.m; sourceTree = "<group>"; };
+		25160EAF1456532C0060A5C5 /* lcl_config_logger_RK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lcl_config_logger_RK.h; sourceTree = "<group>"; };
+		25160EB01456532C0060A5C5 /* LCLNSLog_RK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCLNSLog_RK.h; sourceTree = "<group>"; };
+		25160EB11456532C0060A5C5 /* LCLNSLog_RK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCLNSLog_RK.m; sourceTree = "<group>"; };
 		25160EBD1456532C0060A5C5 /* SOCKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOCKit.h; sourceTree = "<group>"; };
 		25160EBE1456532C0060A5C5 /* SOCKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOCKit.m; sourceTree = "<group>"; };
 		25160F161456538B0060A5C5 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
@@ -1099,9 +1096,9 @@
 				25B6E9FC14CF943E00B1E881 /* RKMutableBlockDictionary.m */,
 				25160D5A145650490060A5C5 /* NSData+RKAdditions.h */,
 				25160D5B145650490060A5C5 /* NSData+RKAdditions.m */,
-				25160DA5145650490060A5C5 /* lcl_config_components.h */,
-				25160DA6145650490060A5C5 /* lcl_config_extensions.h */,
-				25160DA7145650490060A5C5 /* lcl_config_logger.h */,
+				25160DA5145650490060A5C5 /* lcl_config_components_RK.h */,
+				25160DA6145650490060A5C5 /* lcl_config_extensions_RK.h */,
+				25160DA7145650490060A5C5 /* lcl_config_logger_RK.h */,
 				25160DA8145650490060A5C5 /* NSDictionary+RKAdditions.h */,
 				25160DA9145650490060A5C5 /* NSDictionary+RKAdditions.m */,
 				25160DAA145650490060A5C5 /* NSString+RKAdditions.h */,
@@ -1242,11 +1239,11 @@
 		25160EA11456532C0060A5C5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				25160EA21456532C0060A5C5 /* lcl.h */,
-				25160EA31456532C0060A5C5 /* lcl.m */,
-				25160EA41456532C0060A5C5 /* lcl_config_components.template.h */,
-				25160EA51456532C0060A5C5 /* lcl_config_extensions.template.h */,
-				25160EA61456532C0060A5C5 /* lcl_config_logger.template.h */,
+				25160EA21456532C0060A5C5 /* lcl_RK.h */,
+				25160EA31456532C0060A5C5 /* lcl_RK.m */,
+				25160EA41456532C0060A5C5 /* RKlcl_config_components.template.h */,
+				25160EA51456532C0060A5C5 /* RKlcl_config_extensions.template.h */,
+				25160EA61456532C0060A5C5 /* RKlcl_config_logger.template.h */,
 				25160EA71456532C0060A5C5 /* README.md */,
 			);
 			path = Core;
@@ -1255,9 +1252,9 @@
 		25160EAE1456532C0060A5C5 /* NSLog */ = {
 			isa = PBXGroup;
 			children = (
-				25160EAF1456532C0060A5C5 /* lcl_config_logger.h */,
-				25160EB01456532C0060A5C5 /* LCLNSLog.h */,
-				25160EB11456532C0060A5C5 /* LCLNSLog.m */,
+				25160EAF1456532C0060A5C5 /* lcl_config_logger_RK.h */,
+				25160EB01456532C0060A5C5 /* LCLNSLog_RK.h */,
+				25160EB11456532C0060A5C5 /* LCLNSLog_RK.m */,
 			);
 			path = NSLog;
 			sourceTree = "<group>";
@@ -1772,9 +1769,9 @@
 				25160E29145650490060A5C5 /* RKObjectSerializer.h in Headers */,
 				25160E2B145650490060A5C5 /* RKParserRegistry.h in Headers */,
 				25160E2D145650490060A5C5 /* RKRouter.h in Headers */,
-				25160E31145650490060A5C5 /* lcl_config_components.h in Headers */,
-				25160E32145650490060A5C5 /* lcl_config_extensions.h in Headers */,
-				25160E33145650490060A5C5 /* lcl_config_logger.h in Headers */,
+				25160E31145650490060A5C5 /* lcl_config_components_RK.h in Headers */,
+				25160E32145650490060A5C5 /* lcl_config_extensions_RK.h in Headers */,
+				25160E33145650490060A5C5 /* lcl_config_logger_RK.h in Headers */,
 				25160E34145650490060A5C5 /* NSDictionary+RKAdditions.h in Headers */,
 				25160E36145650490060A5C5 /* NSString+RKAdditions.h in Headers */,
 				25160E38145650490060A5C5 /* NSURL+RKAdditions.h in Headers */,
@@ -1794,11 +1791,8 @@
 				25160ED51456532C0060A5C5 /* FileMD5Hash.h in Headers */,
 				25160ED71456532C0060A5C5 /* FileMD5Hash_Prefix.pch in Headers */,
 				25160EDD1456532C0060A5C5 /* JSONKit.h in Headers */,
-				25160EE21456532C0060A5C5 /* lcl.h in Headers */,
-				25160EE61456532C0060A5C5 /* lcl_config_components.template.h in Headers */,
-				25160EE81456532C0060A5C5 /* lcl_config_extensions.template.h in Headers */,
-				25160EEA1456532C0060A5C5 /* lcl_config_logger.template.h in Headers */,
-				25160EF81456532C0060A5C5 /* LCLNSLog.h in Headers */,
+				25160EE21456532C0060A5C5 /* lcl_RK.h in Headers */,
+				25160EF81456532C0060A5C5 /* LCLNSLog_RK.h in Headers */,
 				25160F081456532C0060A5C5 /* SOCKit.h in Headers */,
 				25160E2E145650490060A5C5 /* RestKit.h in Headers */,
 				254A62B914AD544200939BEE /* RKObjectPaginator.h in Headers */,
@@ -2048,8 +2042,8 @@
 				25160ED01456532C0060A5C5 /* NSData+Base64.m in Sources */,
 				25160ED31456532C0060A5C5 /* FileMD5Hash.c in Sources */,
 				25160EDF1456532C0060A5C5 /* JSONKit.m in Sources */,
-				25160EE41456532C0060A5C5 /* lcl.m in Sources */,
-				25160EFA1456532C0060A5C5 /* LCLNSLog.m in Sources */,
+				25160EE41456532C0060A5C5 /* lcl_RK.m in Sources */,
+				25160EFA1456532C0060A5C5 /* LCLNSLog_RK.m in Sources */,
 				25160F0A1456532C0060A5C5 /* SOCKit.m in Sources */,
 				25B408281491CDDC00F21111 /* RKDirectory.m in Sources */,
 				254A62BB14AD544200939BEE /* RKObjectPaginator.m in Sources */,
