@@ -309,8 +309,9 @@ RKRequestMethod RKRequestMethodTypeFromName(NSString *methodName) {
 - (void)addHeadersToRequest
 {
     NSString *header = nil;
-    for (header in _additionalHTTPHeaders) {
-        [_URLRequest setValue:[_additionalHTTPHeaders valueForKey:header] forHTTPHeaderField:header];
+    NSDictionary* hdrs = [_additionalHTTPHeaders copy];
+    for (header in hdrs) {
+        [_URLRequest setValue:[hdrs valueForKey:header] forHTTPHeaderField:header];
     }
 
     if ([self shouldSendParams]) {
