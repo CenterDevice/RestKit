@@ -309,6 +309,8 @@ RKRequestMethod RKRequestMethodTypeFromName(NSString *methodName) {
 - (void)addHeadersToRequest
 {
     NSString *header = nil;
+    // even though declared immutable, could be a mutable instance;
+    // have seen instances of exceptions due to mutation during the enumeration
     NSDictionary* hdrs = [_additionalHTTPHeaders copy];
     for (header in hdrs) {
         [_URLRequest setValue:[hdrs valueForKey:header] forHTTPHeaderField:header];
