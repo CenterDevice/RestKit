@@ -315,6 +315,7 @@ RKRequestMethod RKRequestMethodTypeFromName(NSString *methodName) {
     for (header in hdrs) {
         [_URLRequest setValue:[hdrs valueForKey:header] forHTTPHeaderField:header];
     }
+    [hdrs release];
 
     if ([self shouldSendParams]) {
         // Temporarily support older RKRequestSerializable implementations
