@@ -305,6 +305,12 @@ typedef void(^RKRequestDidFailLoadWithErrorBlock)(NSError *error);
  */
 @property (nonatomic, retain) NSString *HTTPBodyString;
 
+/**
+ Do not keep loaded data in memory, but only inform the delegate about
+ it just in time. Use to prevent Out Of Memory errors when downloading
+ larger files.
+ */
+@property (nonatomic, assign) BOOL dontBufferDataInMemory;
 
 ///-----------------------------------------------------------------------------
 /// @name Delegates
@@ -828,6 +834,17 @@ typedef void(^RKRequestDidFailLoadWithErrorBlock)(NSError *error);
  received from the remote site.
  */
 - (void)request:(RKRequest *)request didReceiveData:(NSInteger)bytesReceived totalBytesReceived:(NSInteger)totalBytesReceived totalBytesExpectedToReceive:(NSInteger)totalBytesExpectedToReceive;
+
+/**
+ Sent when request has received data from remote site. This callback will only be
+ used when the "dontBufferDataInMemory" property has been set to YES.
+
+ @param request The RKRequest object that is handling the loading.
+ @param data the chunk of data that was received
+ @param totalBytesExpectedToReceive An integer of the total bytes that will be
+ received from the remote site.
+ */
+- (void)request:(RKRequest *)request didReceiveData:(NSData*)data totalBytesExpectedToReceive:(NSInteger)totalBytesExpectedToReceive;
 
 
 ///-----------------------------------------------------------------------------

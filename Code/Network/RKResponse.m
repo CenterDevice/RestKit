@@ -214,10 +214,20 @@ return __VA_ARGS__;                                                             
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
     RKResponseIgnoreDelegateIfCancelled();
-    [_body appendData:data];
-    [_request invalidateTimeoutTimer];
-    if ([[_request delegate] respondsToSelector:@selector(request:didReceiveData:totalBytesReceived:totalBytesExpectedToReceive:)]) {
-        [[_request delegate] request:_request didReceiveData:[data length] totalBytesReceived:[_body length] totalBytesExpectedToReceive:_httpURLResponse.expectedContentLength];
+    if ([_request dontBufferDataInMemory])
+    {
+        [_request invalidateTimeoutTimer];
+        if ([[_request delegate] respondsToSelector:@selector(request:didReceiveData:totalBytesExpectedToReceive:)]) {
+            [[_request delegate] request:_request didReceiveData:data totalBytesExpectedToReceive:_httpURLResponse.expectedContentLength];
+        }
+    }
+    else
+    {
+        [_body appendData:data];
+        [_request invalidateTimeoutTimer];
+        if ([[_request delegate] respondsToSelector:@selector(request:didReceiveData:totalBytesReceived:totalBytesExpectedToReceive:)]) {
+            [[_request delegate] request:_request didReceiveData:[data length] totalBytesReceived:[_body length] totalBytesExpectedToReceive:_httpURLResponse.expectedContentLength];
+        }
     }
 }
 
