@@ -48,7 +48,8 @@
 //
 // RestKit Logging Components
 //
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wduplicate-enum"
 _RKlcl_component(App,                         "app",                              "App")
 _RKlcl_component(RestKit,                     "restkit",                          "RestKit")
 _RKlcl_component(RestKitCoreData,             "restkit.core_data",                "RestKit/CoreData")
@@ -60,3 +61,4 @@ _RKlcl_component(RestKitSearch,               "restkit.search",                 
 _RKlcl_component(RestKitSupport,              "restkit.support",                  "RestKit/Support")
 _RKlcl_component(RestKitTesting,              "restkit.testing",                  "RestKit/Testing")
 _RKlcl_component(RestKitUI,                   "restkit.ui",                       "RestKit/UI")
+#pragma clang diagnostic pop
